@@ -1,12 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
 .container {
     display: flex;
     flex-direction: column;
-    height: 2000px;
+    height: 1525px;
     width: auto;
 }
 
 .item {
     border: 1px solid pink;
+    width: 100%;
 }
 
 .header {
@@ -14,7 +30,6 @@
     flex-direction: column;
     background-color: #1F2937;
     height: 500px;
-    width: 100%;
 }
 
 .header-logo {
@@ -69,14 +84,15 @@
 button {
     background-color: pink;
     color: white;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     border-radius: 12px;
     width: 130px;
     height: 50px;
+    border-color: white;
 }
 
 .heroimage {
@@ -124,7 +140,6 @@ button {
 
 .quote {
     height: 300px;
-    width: 100%;
     background-color: #E5E7EB;
 }
 
@@ -136,7 +151,29 @@ button {
     font-style: italic;
 }
 
+.signup {
+    display: flex;
+    background-color: pink;
+    border-radius: 12px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+    width: auto;
+    margin: 70px 70px 100px 100px;
+}
+
+.signup-text {
+    color: white;
+}
+
 .footer {
-    flex: 0.3;
+    display: flex;
+    height: 100px;
     background-color: #1F2937;
+    text-align: center;
+    color: white;
+    /* padding: 10px; */
+    align-items: center;
+    justify-content: center;
 }
