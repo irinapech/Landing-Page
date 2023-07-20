@@ -16,54 +16,65 @@ html {
 .container {
     display: flex;
     flex-direction: column;
-    height: 1525px;
+    /* height: 1525px; */
+    height: auto;
     width: auto;
 }
 
 .item {
-    border: 1px solid pink;
     width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+    .top-header-item {
+        flex-direction: column;
+    }
+
+    .bottom-header-item {
+        flex-direction: column;
+    }
+
+    .header-text {
+        flex-direction: column;
+    }
+
+    .header-one {
+        margin: auto;
+        margin-top: 10%;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .header {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
-    height: 500px;
-}
-
-@media only screen and (max-width: 960px) {
-    .header-logo {
-        flex-direction: column;
-    }
-    .logo {
-        margin: auto;
-        margin-top:10%;
-    }
-    .links {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-.header-logo {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 100px;
+    height: auto;
     color: white;
 }
 
-.logo {
+.top-header-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+.header-one {
     font-size: 1.1em;
     text-decoration: none;
-    color:rgb(221, 221, 221);
+    color: rgb(221, 221, 221);
     position: relative;
     padding: 0 6px;
     cursor: pointer;
     margin-right: auto;
 }
 
-.logo:after {
+.header-one:after {
     content: "";
     position: absolute;
     background-image: linear-gradient(to right, white, pink);
@@ -74,17 +85,12 @@ html {
     transition: 0.3s;
 }
 
-.logo:hover:after {
+.header-one:hover:after {
     width: 100%;
 }
 
-/* .logo:hover {
-    text-shadow: 0 0 5px rgb(59, 210, 230), 0 0 12px rgb(59, 210, 230), 0 0 20px rgb(59, 210, 230);
-    color: white;
-} */
-
 .links .link-item {
-    display: inline-block;
+    display: flex;
     margin-top: 10px;
     transition-duration: 1s;
     float: left;
@@ -92,36 +98,32 @@ html {
     cursor: pointer;
 }
 
-.link-item {
-    text-align: center;
-}
-
 .link-item:hover {
     background-color: pink;
     border-radius: 50px;
 }
 
-.header-info {
+.bottom-header-item {
     display: flex;
-    color: white;
     align-items: center;
     justify-content: space-between;
     padding: 50px 100px;
     gap: 15px;
 }
 
-.heroheader {
+.header-two {
     font-size: 48px;
     font-weight: extra-bold;
     width: 300px;
     height: auto;
 }
 
-.herotext {
-    flex: 1;
+.header-text {
+    /* flex: 1; */
     height: 100%;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .button {
@@ -144,10 +146,10 @@ html {
     box-shadow: 11px -6px 0px 0px white;
 }
 
-.heroimage {
-    flex: 1;
+.header-image {
+    /* flex: 1; */
     background-color: pink;
-    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
