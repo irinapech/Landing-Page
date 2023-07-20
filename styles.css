@@ -23,6 +23,7 @@ html {
 
 .item {
     width: 100%;
+    height: auto;
 }
 
 @media only screen and (max-width: 960px) {
@@ -48,13 +49,30 @@ html {
         flex-direction: column;
         align-items: center;
     }
+
+    .random-images {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .signup {
+        flex-direction: column;
+    }
+
+    .button {
+        align-self: center;
+    }
+
+    .header-image {
+        height: 250px;
+    }
 }
 
 .header {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
-    height: auto;
+    /* height: auto; */
     color: white;
 }
 
@@ -105,8 +123,6 @@ html {
 
 .bottom-header-item {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 50px 100px;
     gap: 15px;
 }
@@ -115,11 +131,9 @@ html {
     font-size: 48px;
     font-weight: extra-bold;
     width: 300px;
-    height: auto;
 }
 
 .header-text {
-    /* flex: 1; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -130,6 +144,7 @@ html {
     background-color: pink;
     color: white;
     padding: 10px;
+    margin: 15px;
     text-align: center;
     display: inline-block;
     font-size: 20px;
@@ -147,22 +162,20 @@ html {
 }
 
 .header-image {
-    /* flex: 1; */
     background-color: pink;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 12px;
+    text-align: center;
+    width: 100%;
 }
 
 .information {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     color: black;
-    height: 400px;
+    padding: 20px;
 }
 
 .information-header {
@@ -190,7 +203,6 @@ html {
 }
 
 .quote {
-    height: 300px;
     background-color: #E5E7EB;
 }
 
@@ -211,7 +223,7 @@ html {
     padding: 30px;
     box-sizing: border-box;
     width: auto;
-    margin: 70px 70px 100px 100px;
+    margin: 70px 100px;
 }
 
 .signup-text {
