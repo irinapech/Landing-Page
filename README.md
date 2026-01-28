@@ -5,7 +5,10 @@ The project explores the use of:
 + Responsive Layout
 + Button and header animation
 
-Future objective is to turn this page into a customizable page with the option to attach images and text.
+Future objectives:
+* Turning this page into a customizable page with the option to attach images and text
+* Applying different themes
+* Adding a music player
 
 ![Landing page image](landing-page-png.png)
 
